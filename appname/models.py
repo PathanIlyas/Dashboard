@@ -17,10 +17,11 @@ class Student(models.Model):
     TECHNOLOGY = models.CharField(max_length=50, blank=True)
 
     STATUS_CHOICES = [
-        ('visiting', 'visiting'),
+        ('visiting', 'Visiting'),
         ('adjoining', 'Adjoining'),
         ('pending', 'Pending'),
         ('rejected', 'Rejected'),
+        ('waiting', 'Waiting'),
     ]
 
     status = models.CharField(
