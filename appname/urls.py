@@ -19,6 +19,6 @@ urlpatterns = [
 
     path("receipt/<int:installment_id>/", views.generate_receipt, name="generate_receipt"),
     path("payment-history/<int:id>/", views.payment_history, name="payment_history"),
-    path("followup/<int:id>/", views.followup_details.html, name="followup_details"),
+    path("followup/<int:id>/", views.followup_details, name="followup_details"),
 ]
 
